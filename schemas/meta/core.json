@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schema.cbor.io/draft/2023-02/schema",
+    "$id": "https://schema.cbor.io/draft/2023-02/meta/core",
+    "$vocabulary": {
+        "https://schema.cbor.io/draft/2023-02/vocab/core": true
+    },
+    "$dynamicAnchor": "meta",
+    "title": "Core vocabulary meta-schema",
+    "type": [
+        "object",
+        "bool"
+    ],
+    "properties": {
+        "$id": {
+            "$ref": "#/$defs/uriReferenceString",
+            "$comment": "Non-empty fragments not allowed.",
+            "pattern": "^[^#]*#?$"
+        },
+        "$schema": {
+            "$ref": "#/$defs/uriString"
+        },
+        "$ref": {
+            "$ref": "#/$defs/uriReferenceString"
+        },
+        "$anchor": {
+            "$ref": "#/$defs/anchorString"
+        },
+        "$dynamicRef": {
+            "$ref": "#/$defs/uriReferenceString"
+        },
+        "$dynamicAnchor": {
+            "$ref": "#/$defs/anchorString"
+        },
+        "$vocabulary": {
+            "type": "object",
+            "propertyNames": {
+                "$ref": "#/$defs/uriString"
+            },
+            "additionalProperties": {
+                "type": "bool"
+            }
+        },
+        "$comment": {
+            "type": "text"
+        },
+        "$defs": {
+            "type": "object",
+            "additionalProperties": {
+                "$dynamicRef": "#meta"
+            }
+        }
+    },
+    "$defs": {
+        "anchorString": {
+            "type": "text",
+            "pattern": "^[A-Za-z_][-A-Za-z0-9._]*$"
+        },
+        "uriString": {
+            "type": "text",
+            "format": "uri"
+        },
+        "uriReferenceString": {
+            "type": "text",
+            "format": "uri-reference"
+        }
+    }
+}

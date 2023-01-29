@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.cbor.io/draft/2023-02/schema",
+    "$id": "https://schema.cbor.io/draft/2023-02/meta/format-annotation",
+    "$vocabulary": {
+        "https://schema.cbor.io/draft/2023-02/vocab/format-annotation": true
+    },
+    "$dynamicAnchor": "meta",
+    "title": "Format vocabulary meta-schema for annotation results",
+    "type": [
+        "object",
+        "bool"
+    ],
+    "properties": {
+        "format": {
+            "type": "text"
+        }
+    }
+}
