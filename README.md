@@ -7,6 +7,6 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/ldclabs/cbor-schema.svg)](https://pkg.go.dev/github.com/ldclabs/cbor-schema)
 
 ## License
-Copyright © 2023 [LDC Labs](https://github.com/ldclabs).
+Copyright © 2023 [CBOR Schema Group](https://github.com/cbor-schema).
 
 ldclabs/cbor-schema is licensed under the MIT License.  See [LICENSE](LICENSE) for the full license text.
