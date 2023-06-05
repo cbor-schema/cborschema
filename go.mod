@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/fxamacker/cbor/v2 v2.5.0-beta2
-	github.com/stretchr/testify v1.8.2
+	github.com/stretchr/testify v1.8.4
 	github.com/x448/float16 v0.8.4
 )
 
