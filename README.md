@@ -1,4 +1,5 @@
 # CBOR Schema Validation in Go.
+**Should be refactor with new schema.**
 
 [![CI](https://github.com/ldclabs/cbor-schema/actions/workflows/ci.yml/badge.svg)](https://github.com/ldclabs/cbor-schema/actions/workflows/ci.yml)
 [![Codecov](https://codecov.io/gh/ldclabs/cbor-schema/branch/main/graph/badge.svg)](https://codecov.io/gh/ldclabs/cbor-schema)
